@@ -59,7 +59,7 @@ public class Program {
 			      
 			 				 	
 			 	Double sumVendas1 = sellers.stream()
-			 			.filter(p -> p.getMonth() == 1 && p.getMonth() == 7)
+			 			.filter(p -> p.getMonth() == 1 || p.getMonth() == 7)
 			 			.map(p -> p.getTotal())
 			 			.reduce(0.0, (x, y) -> x + y);
 			 	
